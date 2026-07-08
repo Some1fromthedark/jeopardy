@@ -603,11 +603,17 @@ button{
 
 #resetGame{
 
-    margin-top:20px;
+    position:absolute;
 
-    padding:10px 18px;
+    top:50px;
 
-    font-size:1rem;
+    right:150px;
+
+    margin:0;
+
+    padding:8px 14px;
+
+    font-size:.9rem;
 
     font-weight:bold;
 
@@ -620,6 +626,8 @@ button{
     color:#ff8080;
 
     cursor:pointer;
+
+    z-index:2;
 
 }
 
@@ -645,9 +653,19 @@ button{
 
     #titleBanner{
 
-        padding:8px;
+		width:100%;
 
-    }
+		background:var(--board);
+
+		border-radius:12px;
+
+		text-align:center;
+
+		padding:12px;
+
+		position:relative;
+
+	}
 
 
     #titleBanner h1{
@@ -716,6 +734,27 @@ button{
     #app{
 
         min-width:900px;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    #titleBanner h1{
+
+        padding-left:80px;
+
+        padding-right:80px;
+
+    }
+
+
+    #resetGame{
+
+        font-size:.75rem;
+
+        padding:6px 10px;
 
     }
 
