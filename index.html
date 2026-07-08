@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Jeopardy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <header id="titleBanner">
+        <h1 id="gameTitle"></h1>
+        <h2 id="gameSubtitle"></h2>
+    </header>
+
+    <main>
+        <div id="board"></div>
+    </main>
+
+    <footer id="scoreboard">
+	</footer>
+
+	<button id="resetGame" class="resetButton">
+		Reset Game
+	</button>
+
+</div>
+
+<div id="questionModal" class="hidden">
+
+    <div class="card">
+
+		<div id="questionValue"></div>
+		<div id="questionCategory"></div>
+
+		<div id="questionText"></div>
+
+		<div id="answer" class="hidden"></div>
+
+		<div id="scoringPanel" class="hidden">
+
+			<h2>Scoring</h2>
+			
+			<div id="stagedScorePanel">
+
+				<h3>Pending Score Changes</h3>
+
+				<div id="stagedScores"></div>
+
+			</div>
+
+			<div class="scoreSection">
+
+				<h3>Award Points</h3>
+
+				<div id="awardButtons"
+					 class="buttonGrid"></div>
+
+			</div>
+
+			<div class="scoreSection">
+
+				<h3>Deduct Points</h3>
+
+				<div id="deductButtons"
+					 class="buttonGrid"></div>
+
+			</div>
+			
+		</div>
+
+		<button id="revealButton">
+			Reveal Answer
+		</button>
+		
+		<button id="backButton">
+			Back
+		</button>
+		
+		<button id="finishButton", class="hidden">
+			Finish Question
+		</button>
+
+	</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

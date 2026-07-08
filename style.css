@@ -1,0 +1,543 @@
+:root{
+
+    --bg:#081321;
+
+    --board:#123777;
+
+    --tile:#2454c4;
+
+    --tileHover:#3767db;
+
+    --gold:#ffcc33;
+
+    --text:white;
+
+    --font:Arial,sans-serif;
+
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+	
+	height:100%;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:var(--font);
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+#app{
+
+    width:min(1700px,95vw);
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px;
+
+}
+
+#titleBanner{
+
+    width:100%;
+
+    background:var(--board);
+
+    border-radius:12px;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+#titleBanner h1{
+
+    margin:0;
+
+    color:var(--gold);
+
+    font-size:3rem;
+
+}
+
+#titleBanner h2{
+
+    margin-top:10px;
+
+    font-weight:normal;
+
+}
+
+#board{
+
+    width:100%;
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+.category-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.category{
+
+    background:var(--board);
+
+    min-height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    font-size:1.4rem;
+
+}
+
+.tile{
+
+    background:var(--tile);
+
+    min-height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    transition:.15s;
+
+}
+
+.tile:hover{
+
+    background:var(--tileHover);
+
+}
+
+.tile.used{
+
+    background:#333;
+
+    color:#666;
+
+    cursor:default;
+
+}
+
+#scoreboard{
+
+    width:100%;
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+}
+
+.team{
+
+    flex:1;
+
+    background:var(--board);
+
+    padding:20px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+}
+
+.team-name{
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+}
+
+.team-score{
+
+    margin-top:10px;
+
+    color:var(--gold);
+
+    font-size:2.5rem;
+
+}
+
+.score-controls {
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:10px;
+}
+
+.adjustButton{
+
+    margin-top:0;
+
+    min-width:70px;
+
+    padding:8px 12px;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    border-radius:6px;
+
+    border:2px solid var(--gold);
+
+    background:var(--tile);
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    transition:.15s;
+
+}
+
+
+.adjustButton:hover{
+
+    background:var(--tileHover);
+
+}
+
+.resetButton{
+
+    margin-top:0;
+
+    min-width:70px;
+
+    padding:8px 12px;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    border-radius:6px;
+
+    border:2px solid var(--gold);
+
+    background:var(--tile);
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    transition:.15s;
+
+}
+
+
+.resetButton:hover{
+
+    background:var(--tileHover);
+
+}
+
+#questionModal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.card{
+
+    width:min(900px,90vw);
+
+    background:#151515;
+
+    border-radius:12px;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+#questionValue{
+
+    color:var(--gold);
+
+    font-size:2rem;
+
+}
+
+#questionCategory{
+
+    margin-top:10px;
+
+    font-size:1.5rem;
+
+}
+
+#questionText{
+
+    margin-top:30px;
+
+    font-size:2rem;
+
+}
+
+#answer{
+
+    margin-top:40px;
+
+    font-size:2rem;
+
+    color:#80ff80;
+
+}
+
+button{
+
+    margin-top:30px;
+
+    padding:12px 20px;
+
+    font-size:1.1rem;
+
+}
+
+#awardPanel{
+
+    margin-top:40px;
+
+}
+
+#teamButtons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:20px 0;
+
+}
+
+.teamButton{
+
+    padding:15px 25px;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+}
+
+#scoringPanel{
+
+    margin-top:40px;
+
+}
+
+.scoreSection{
+
+    margin-top:30px;
+
+}
+
+.buttonGrid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+.teamButton{
+
+    min-width:180px;
+
+    padding:15px;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+}
+
+.award{
+
+    background:#2e7d32;
+
+    color:white;
+
+}
+
+.deduct{
+
+    background:#b71c1c;
+
+    color:white;
+
+}
+
+#finishButton{
+
+    margin-top:30px;
+
+}
+
+#stagedScorePanel{
+
+    background:var(--board);
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+}
+
+
+#stagedScorePanel h3{
+
+    margin:0 0 15px;
+
+    color:var(--gold);
+
+    font-size:1.4rem;
+
+}
+
+
+.stagedScoreRow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:8px;
+
+    font-size:1.3rem;
+
+}
+
+
+.stagedTeamName{
+
+    min-width:180px;
+
+    text-align:right;
+
+    font-weight:bold;
+
+}
+
+
+.stagedTeamScore{
+
+    color:var(--gold);
+
+    font-size:1.5rem;
+
+    min-width:80px;
+
+}
+
+
+.stagedChange{
+
+    min-width:70px;
+
+    font-weight:bold;
+
+}
+
+
+.stagedChange.positive{
+
+    color:#80ff80;
+
+}
+
+
+.stagedChange.negative{
+
+    color:#ff8080;
+
+}
+
+#stagedScorePanel.hasChanges{
+
+    outline:2px solid var(--gold);
+
+}

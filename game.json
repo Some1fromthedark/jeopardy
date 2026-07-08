@@ -1,0 +1,155 @@
+{
+    "title": "Wedding Jeopardy",
+    "subtitle": "Andrina & Ivan",
+
+	"questionValues": [
+        100,
+        200,
+        300,
+        400,
+        500
+    ],
+
+    "teams": [
+        {
+            "name": "Bride's Team",
+            "score": 0
+        },
+        {
+            "name": "Groom's Team",
+            "score": 0
+        },
+        {
+            "name": "Parents",
+            "score": 0
+        }
+    ],
+
+    "categories": [
+        {
+            "title": "Category 1",
+            "questions": [
+                {
+                    "question": "Placeholder question",
+                    "answer": "Placeholder answer"
+                },
+                {
+                    "question": "Placeholder question",
+                    "answer": "Placeholder answer"
+                },
+                {
+                    "question": "Placeholder question",
+                    "answer": "Placeholder answer"
+                },
+                {
+                    "question": "Placeholder question",
+                    "answer": "Placeholder answer"
+                },
+                {
+                    "question": "Placeholder question",
+                    "answer": "Placeholder answer"
+                }
+            ]
+        },
+        {
+            "title": "Category 2",
+            "questions": [
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				}
+            ]
+        },
+        {
+            "title": "Category 3",
+            "questions": [
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				}
+            ]
+        },
+        {
+            "title": "Category 4",
+            "questions": [
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				}
+            ]
+        },
+        {
+            "title": "Category 5",
+            "questions": [
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                { 
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				},
+                {
+					"question": "...",
+					"answer": "..."
+				}
+            ]
+        }
+    ]
+}
