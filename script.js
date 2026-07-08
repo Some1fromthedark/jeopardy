@@ -6,7 +6,7 @@ let currentQuestionValue = 0;
 let stagedScores = [];
 let usedQuestions = new Set();
 
-fetch("game.json")
+fetch("game.json?v=" + Date.now())
     .then(r => r.json())
     .then(data => {
 
@@ -88,7 +88,7 @@ function buildBoard(){
     board.innerHTML = "";
 
 	board.style.gridTemplateColumns =
-		`repeat(${game.categories.length}, minmax(220px,1fr))`;
+		`repeat(${game.categories.length}, minmax(0,1fr))`;
 
     game.categories.forEach(category=>{
 

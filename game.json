@@ -5,22 +5,16 @@
 	"questionValues": [
         100,
         200,
-        300,
-        400,
-        500
+        300
     ],
 
     "teams": [
         {
-            "name": "Bride's Team",
+            "name": "Team 1",
             "score": 0
         },
         {
-            "name": "Groom's Team",
-            "score": 0
-        },
-        {
-            "name": "Parents",
+            "name": "Team 2",
             "score": 0
         }
     ],
@@ -29,14 +23,6 @@
         {
             "title": "Category 1",
             "questions": [
-                {
-                    "question": "Placeholder question",
-                    "answer": "Placeholder answer"
-                },
-                {
-                    "question": "Placeholder question",
-                    "answer": "Placeholder answer"
-                },
                 {
                     "question": "Placeholder question",
                     "answer": "Placeholder answer"
@@ -65,14 +51,6 @@
                 {
 					"question": "...",
 					"answer": "..."
-				},
-                {
-					"question": "...",
-					"answer": "..."
-				},
-                {
-					"question": "...",
-					"answer": "..."
 				}
             ]
         },
@@ -84,14 +62,6 @@
 					"answer": "..."
 				},
                 { 
-					"question": "...",
-					"answer": "..."
-				},
-                {
-					"question": "...",
-					"answer": "..."
-				},
-                {
 					"question": "...",
 					"answer": "..."
 				},
@@ -115,14 +85,6 @@
                 {
 					"question": "...",
 					"answer": "..."
-				},
-                {
-					"question": "...",
-					"answer": "..."
-				},
-                {
-					"question": "...",
-					"answer": "..."
 				}
             ]
         },
@@ -134,14 +96,6 @@
 					"answer": "..."
 				},
                 { 
-					"question": "...",
-					"answer": "..."
-				},
-                {
-					"question": "...",
-					"answer": "..."
-				},
-                {
 					"question": "...",
 					"answer": "..."
 				},

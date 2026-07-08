@@ -45,9 +45,11 @@ body{
 
 #app{
 
-    width:min(1700px,95vw);
+    width:100vw;
 
     height:100vh;
+
+    max-width:1700px;
 
     display:flex;
 
@@ -55,9 +57,9 @@ body{
 
     align-items:center;
 
-    gap:15px;
+    gap:12px;
 
-    padding:15px;
+    padding:12px;
 
 }
 
@@ -120,7 +122,9 @@ main{
 
     display:grid;
 
-    gap:10px;
+    gap:6px;
+
+    overflow:hidden;
 
 }
 
@@ -152,7 +156,7 @@ main{
 
     font-weight:bold;
 
-    font-size:1.3rem;
+    font-size:clamp(.75rem, 2vw, 1.3rem);
 
 }
 
@@ -171,7 +175,7 @@ main{
 
     align-items:center;
 
-    font-size:2rem;
+    font-size:clamp(1rem, 3vw, 2rem);
 
     cursor:pointer;
 
@@ -315,12 +319,11 @@ main{
 
 }
 
-
 .card{
 
-    width:min(900px,90vw);
+    width:min(900px,95vw);
 
-    max-height:90vh;
+    max-height:85vh;
 
     overflow-y:auto;
 
@@ -626,5 +629,94 @@ button{
     background:#b71c1c;
 
     color:white;
+
+}
+
+@media (max-width:1200px){
+
+    #app{
+
+        padding:8px;
+
+        gap:8px;
+
+    }
+
+
+    #titleBanner{
+
+        padding:8px;
+
+    }
+
+
+    #titleBanner h1{
+
+        font-size:2rem;
+
+    }
+
+
+    #titleBanner h2{
+
+        font-size:1.1rem;
+
+    }
+
+
+    .category{
+
+        min-height:45px;
+
+    }
+
+
+    .team{
+
+        padding:8px;
+
+    }
+
+
+    .team-name{
+
+        font-size:1rem;
+
+    }
+
+
+    .team-score{
+
+        font-size:1.5rem;
+
+    }
+
+
+    .adjustButton{
+
+        min-width:55px;
+
+        padding:5px;
+
+        font-size:.8rem;
+
+    }
+
+}
+
+@media (orientation:portrait){
+
+    #board{
+
+        overflow-x:auto;
+
+    }
+
+
+    #app{
+
+        min-width:900px;
+
+    }
 
 }
