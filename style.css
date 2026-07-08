@@ -111,6 +111,8 @@ main{
 
     min-height:0;
 
+    display:flex;
+
 }
 
 
@@ -642,6 +644,14 @@ button{
 
 @media (max-width:1200px){
 
+	main{
+
+        flex:none;
+
+        height:65vh;
+
+    }
+
     #app{
 
         padding:8px;
@@ -682,9 +692,18 @@ button{
     }
 
 
+    .tile{
+
+        font-size:1.4rem;
+
+    }
+
+
     .category{
 
-        min-height:45px;
+        font-size:1rem;
+
+        min-height:40px;
 
     }
 
@@ -706,6 +725,13 @@ button{
     .team-score{
 
         font-size:1.5rem;
+
+    }
+
+
+    .score-controls{
+
+        margin-top:5px;
 
     }
 
