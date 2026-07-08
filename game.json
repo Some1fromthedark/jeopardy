@@ -4,8 +4,9 @@
 
 	"questionValues": [
         100,
-        200,
-        300
+        100,
+        100,
+		200
     ],
 
     "teams": [
@@ -21,87 +22,91 @@
 
     "categories": [
         {
-            "title": "Category 1",
+            "title": "Fast Food",
             "questions": [
                 {
-                    "question": "Placeholder question",
-                    "answer": "Placeholder answer"
+                    "question": "Where can you get a Baconator?",
+                    "answer": "Wendy's"
                 },
                 {
-                    "question": "Placeholder question",
-                    "answer": "Placeholder answer"
+                    "question": "Where can you get a Double Down?",
+                    "answer": "KFC"
                 },
                 {
-                    "question": "Placeholder question",
-                    "answer": "Placeholder answer"
+                    "question": "Where can you get Chicken Fries?",
+                    "answer": "Burger King"
                 }
             ]
         },
         {
-            "title": "Category 2",
+            "title": "Jingles from Ads",
             "questions": [
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "What is the Meow Mix Jingle?",
+					"answer": "Meow Meow Meow Meow"
 				},
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "Call JG Wentworth ...",
+					"answer": "877-Cash-Now"
 				},
                 {
-					"question": "...",
-					"answer": "..."
+					"question": "800-588-2300 ...",
+					"answer": "Empire"
 				}
             ]
         },
         {
-            "title": "Category 3",
+            "title": "Challenges",
             "questions": [
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "The challenge is...",
+					"answer": "Times Tables"
 				},
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "The challenge is...",
+					"answer": "Scavenger Hunt (1 Bride item + 1 Groom item)"
 				},
                 {
-					"question": "...",
-					"answer": "..."
+					"question": "The challenge is...",
+					"answer": "Take a Shot & Flip a Cup"
 				}
             ]
         },
         {
-            "title": "Category 4",
+            "title": "Movies / Shows",
             "questions": [
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "On Wednesdays we wear pink.",
+					"answer": "Mean Girls"
 				},
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "I'll have what she's having.",
+					"answer": "When Harry Met Sally"
 				},
                 {
-					"question": "...",
-					"answer": "..."
+					"question": "You're killing me, Smalls.",
+					"answer": "The Sandlot"
 				}
             ]
         },
         {
-            "title": "Category 5",
+            "title": "Couples Questions",
             "questions": [
                 { 
-					"question": "...",
-					"answer": "..."
+					"question": "How many pets do Andrina & Ivan have? (Bonus Points for Breed & Names)",
+					"answer": "Two"
 				},
                 { 
-					"question": "...",
+					"question": "How long have Andrina & Ivan been together?",
 					"answer": "..."
 				},
                 {
-					"question": "...",
-					"answer": "..."
+					"question": "Who is the night owl & who is the early bird?",
+					"answer": "Night Owl: Andrina, Early Bird: Ivan"
+				},
+				{
+					"question": "Where was the proposal?",
+					"answer": "Lake Tahoe"
 				}
             ]
         }
