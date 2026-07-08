@@ -1,11 +1,15 @@
 :root{
 
-    --bg:#081321;
-    --board:#123777;
-    --tile:#2454c4;
-    --tileHover:#3767db;
-    --gold:#ffcc33;
-    --text:white;
+    --bg:#F5FAF6;           /* very light green-white */
+    --board:#8DB8A1;        /* sage green */
+    --tile:#B7D9C6;         /* light mint */
+    --tileHover:#CBE8D7;    /* lighter mint */
+    --gold:#F2D38A;         /* champagne gold */
+    --text:#29443A;         /* dark evergreen */
+    --textLight:#FFFFFF;
+    --card:#FFFFFF;
+    --used:#D8D8D8;
+    --usedText:#888888;
     --font:Arial,sans-serif;
 
 }
@@ -69,6 +73,8 @@ body{
 #titleBanner{
 
     width:100%;
+	
+	color:var(--textLight);
 
     background:var(--board);
 
@@ -182,6 +188,8 @@ main{
     cursor:pointer;
 
     transition:.15s;
+	
+	color:var(--text)
 
 }
 
@@ -195,9 +203,9 @@ main{
 
 .tile.used{
 
-    background:#333;
+    background:var(--used);
 
-    color:#666;
+    color:var(--usedText);
 
     cursor:default;
 
@@ -222,6 +230,8 @@ main{
 .team{
 
     flex:1;
+	
+	color:var(--textLight);
 
     background:var(--board);
 
@@ -309,7 +319,7 @@ main{
 
     inset:0;
 
-    background:rgba(0,0,0,.92);
+    background:rgba(35,50,40,.55);
 
     display:flex;
 
@@ -329,7 +339,9 @@ main{
 
     overflow-y:auto;
 
-    background:#151515;
+    background:var(--card);
+	
+	color:var(--text)
 
     border-radius:12px;
 
@@ -444,9 +456,7 @@ button{
 
 .award{
 
-    background:#2e7d32;
-
-    color:white;
+    background:#7DB892;
 
 }
 
@@ -460,9 +470,7 @@ button{
 
 .deduct{
 
-    background:#b71c1c;
-
-    color:white;
+    background:#C66F6F;
 
 }
 
@@ -642,6 +650,16 @@ button{
 
 }
 
+#revealButton{
+
+    background:var(--board);
+
+    color:white;
+
+    border:none;
+
+}
+
 @media (max-width:1200px){
 
 	main{
@@ -654,9 +672,7 @@ button{
 
     #app{
 
-        padding:8px;
-
-        gap:8px;
+        padding:4px 2px 8px;
 
     }
 
@@ -743,6 +759,16 @@ button{
         padding:5px;
 
         font-size:.8rem;
+
+    }
+
+	#board{
+
+        width:calc(100% - 8px);
+
+        margin:0 auto;
+
+        gap:4px;
 
     }
 
