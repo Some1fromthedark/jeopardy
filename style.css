@@ -311,6 +311,27 @@ main{
 
     align-items:center;
 
+    padding:20px;
+
+}
+
+
+.card{
+
+    width:min(900px,90vw);
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    background:#151515;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
 }
 
 
@@ -321,55 +342,40 @@ main{
 }
 
 
-.card{
-
-    width:min(900px,90vw);
-
-    background:#151515;
-
-    border-radius:12px;
-
-    padding:40px;
-
-    text-align:center;
-
-}
-
-
 /* Question */
 
 #questionValue{
 
     color:var(--gold);
 
-    font-size:2rem;
+    font-size:1.8rem;
 
 }
 
 
 #questionCategory{
 
-    margin-top:10px;
+    margin-top:8px;
 
-    font-size:1.5rem;
+    font-size:1.3rem;
 
 }
 
 
 #questionText{
 
-    margin-top:30px;
+    margin-top:20px;
 
-    font-size:2rem;
+    font-size:1.8rem;
 
 }
 
 
 #answer{
 
-    margin-top:40px;
+    margin-top:25px;
 
-    font-size:2rem;
+    font-size:1.8rem;
 
     color:#80ff80;
 
@@ -471,9 +477,9 @@ button{
 
     border-radius:10px;
 
-    padding:20px;
+    padding:15px;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
 
@@ -504,11 +510,11 @@ button{
 
     align-items:center;
 
-    gap:15px;
+    gap:12px;
 
-    padding:8px;
+    padding:6px;
 
-    font-size:1.3rem;
+    font-size:1.1rem;
 
 }
 
